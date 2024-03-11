@@ -12,7 +12,8 @@ export const HeroContainer = styled.section`
 
 export const ClientsContainer = styled.div`
   width: 40vw;
-  height: 70vh;
+  height: 100%;
+  min-height: 70vh;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -23,6 +24,8 @@ export const ClientsContainer = styled.div`
 
   @media (max-width: 720px) {
     width: 90%;
+    min-height: fit-content;
+    /* justify-content: space-between; */
   }
 
   & .title {
@@ -37,6 +40,7 @@ export const ClientsContainer = styled.div`
   }
 
   & form {
+    padding: 3rem 0;
     height: 100%;
     display: flex;
     flex-direction: column;
