@@ -3,6 +3,11 @@ import styled from "styled-components"
 export const HeroContainer = styled.section`
   display: flex;
   justify-content: space-evenly;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const ClientsContainer = styled.div`
@@ -15,6 +20,10 @@ export const ClientsContainer = styled.div`
   background: #f5f5f5;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 20px #00000099;
+
+  @media (max-width: 720px) {
+    width: 90%;
+  }
 
   & .title {
     width: 100%;
@@ -76,6 +85,11 @@ export const ClientsContainer = styled.div`
         width: 80%;
         border-top: 1px solid #454545;
 
+        @media (max-width: 720px) {
+          width: 95%;
+          border-top: none;
+        }
+
         &:nth-child(1) {
           border-top: none;
         }
@@ -101,6 +115,7 @@ export const ClientsContainer = styled.div`
             display: flex;
             flex-direction: column;
             gap: 0.2rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -117,7 +132,11 @@ export const ClientsContainer = styled.div`
       background: url("https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png");
       background-size: 1.5rem;
       background-repeat: no-repeat;
-      background-position: 29.6vh;
+      background-position: calc(100% - 20px) center;
+
+      @media (max-width: 720px) {
+        background-position: calc(100% - 10px) center;
+      }
     }
 
     & button {
