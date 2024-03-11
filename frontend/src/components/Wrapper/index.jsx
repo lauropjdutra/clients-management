@@ -250,7 +250,7 @@ export const Wrapper = () => {
       </W.ClientsContainer>
       {modalVisible && (
         <W.Overlay>
-          <W.ClientsContainer>
+          <W.ClientsContainer className="route-container">
             <h2 className="title">Rota de Visitação</h2>
             <div className="clients-list route-list">
               {optimizedRoute.map((client, index) => (

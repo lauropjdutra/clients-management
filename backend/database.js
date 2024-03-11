@@ -19,6 +19,8 @@ const connect = async () => {
   }
 }
 
+connect()
+
 const selectClients = async () => {
   const client = await connect()
   try {

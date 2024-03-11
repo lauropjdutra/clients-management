@@ -25,7 +25,6 @@ export const ClientsContainer = styled.div`
   @media (max-width: 720px) {
     width: 90%;
     min-height: fit-content;
-    /* justify-content: space-between; */
   }
 
   & .title {
@@ -194,6 +193,10 @@ export const Overlay = styled.div`
   align-items: center;
   justify-content: center;
 
+  & .route-container {
+    height: 70vh;
+  }
+
   & .route-list {
     height: 100%;
     display: flex;
@@ -205,6 +208,16 @@ export const Overlay = styled.div`
       display: flex;
       align-items: center;
       gap: 1rem;
+      
+      & span {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-right: 1rem;
+        border-right: 2px solid #003388;
+        font-weight: 600;
+        color: #001155;
+      }
     }
   }
 
